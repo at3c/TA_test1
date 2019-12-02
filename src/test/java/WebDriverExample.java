@@ -22,6 +22,7 @@ public class WebDriverExample {
         driver.findElement(By.className("auth-modal__submit")).click();
         Thread.sleep(2000);
         System.out.println(driver.findElement(By.className("header-topline__user-link")).getText());
+        driver.quit();
     }
 
     public static WebDriver getDriver() {
